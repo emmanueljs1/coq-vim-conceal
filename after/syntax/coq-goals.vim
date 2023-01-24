@@ -16,16 +16,16 @@ syn match coqSubscriptDigit /9/ contained conceal cchar=₉
 syn keyword coqKwd forall conceal cchar=∀
 syn keyword coqKwd exists conceal cchar=∃
 syn keyword coqKwd Prop conceal cchar=ℙ
-"syn match coqKwd /->/ contained conceal cchar=→
-"syn match coqKwd /<->/ contained conceal cchar=↔
+syn keyword coqKwd nat conceal cchar=ℕ
 syntax match coqKwd /<>/ contained conceal cchar=≠
 syntax match coqKwd /\\\// contained conceal cchar=∨
 syntax match coqKwd /\/\\/ contained conceal cchar=∧
 syntax match coqKwd /|-/ contained conceal cchar=⊢
 syntax match coqKwd /\~/ contained conceal cchar=¬
+syntax match coqKwd /\~>/ contained
 
 hi link coqKwd Operator
 hi! link Conceal Operator
 
 setlocal conceallevel=1
-setlocal concealcursor=n
+setlocal concealcursor=nv
